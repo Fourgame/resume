@@ -1,12 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ResumeApp from "./ResumeApp";
 
 function App() {
-  return (
-    <div>
-      My Resume
-    </div>
-  );
+  return <ResumeApp />;
 }
 
 export default App;
