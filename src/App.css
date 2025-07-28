@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+/* ✅ ล็อคทั้ง Layout ไม่ให้ responsive */
+html, body {
+  width: 1024px;       /* กำหนดขนาดคงที่ */
+  max-width: 1024px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  overflow-x: auto;    /* ให้เลื่อนได้ถ้าจอเล็ก */
+}
+
+/* ✅ ทำให้ Bootstrap container ไม่ย่อ */
+.container, .row {
+  width: 1024px !important;
+  max-width: 1024px !important;
+}
+
+/* ✅ ล็อค card ไม่ให้เต็มจอ */
+.card {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ✅ ล็อคขนาด modal-dialog */
+.modal-dialog {
+  max-width: 900px !important;
+  width: 900px !important;
+  margin: 30px auto;
+}
+
+/* ✅ ป้องกัน modal-content ขยายเต็ม */
+.modal-content {
+  width: 900px !important;
+  max-width: 900px !important;
+  margin: auto;
+  border-radius: 12px;
+}
+

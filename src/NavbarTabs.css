@@ -1,0 +1,21 @@
+.nav-wrapper.hide {
+  top: -100px;
+}
+
+.nav-wrapper.show {
+  top: 0;
+}
+
+.nav-tabs-big .nav-link {
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-tabs-big .nav-link.active,
+.nav-tabs-big .nav-link:hover {
+  background-color: #0d6efd;
+  color: white !important;
+}
