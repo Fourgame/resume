@@ -42,7 +42,7 @@ const NavbarTabs = () => {
         <Link to="awards" spy smooth duration={500} className="nav-link fw-bold">
           Awards
         </Link>
-        <Link to="about me" spy smooth duration={500} className="nav-link fw-bold">
+        <Link to="about" spy smooth duration={500} className="nav-link fw-bold">
           About
         </Link>
         <Link to="contact" spy smooth duration={500} className="nav-link fw-bold">
