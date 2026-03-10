@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.726ff561.css",
-    "main.js": "/resume/static/js/main.bf414bc9.js",
+    "main.css": "/resume/static/css/main.556a9227.css",
+    "main.js": "/resume/static/js/main.7507c991.js",
     "static/js/453.f9cd6926.chunk.js": "/resume/static/js/453.f9cd6926.chunk.js",
-    "static/media/reseach1.png": "/resume/static/media/reseach1.35254b2ab02521d7d00c.png",
+    "static/media/reseach2.png": "/resume/static/media/reseach2.35254b2ab02521d7d00c.png",
+    "static/media/generatemusic1.png": "/resume/static/media/generatemusic1.72437ce5e36401e34fc0.png",
     "static/media/greenbox2.png": "/resume/static/media/greenbox2.074011d8fa57992bec43.png",
-    "static/media/NSO2.png": "/resume/static/media/NSO2.b3146a07f9e25b426e6d.png",
+    "static/media/VirtualTryOn1.png": "/resume/static/media/VirtualTryOn1.6596aad91d56a771849a.png",
+    "static/media/mahidon2.png": "/resume/static/media/mahidon2.6227346609d1293c04a7.png",
     "static/media/NSO1.png": "/resume/static/media/NSO1.4367b0fb57407cdb4cb3.png",
-    "static/media/NSO3.png": "/resume/static/media/NSO3.34805694ebdd16f04c3a.png",
+    "static/media/projectBBL1.png": "/resume/static/media/projectBBL1.8ce479a64759d881efc6.png",
+    "static/media/mahidon3.png": "/resume/static/media/mahidon3.475cdb0fb23c9af0c412.png",
+    "static/media/mahidon1.png": "/resume/static/media/mahidon1.7afaf1276f9f628a4bdb.png",
+    "static/media/VirtualTryOn3.png": "/resume/static/media/VirtualTryOn3.b29abcfdd133e8d2f411.png",
     "static/media/me.png": "/resume/static/media/me.e006fe0c6641fe526595.png",
-    "static/media/reseach2.png": "/resume/static/media/reseach2.f001ad77610948dbd10a.png",
-    "static/media/NSO4.png": "/resume/static/media/NSO4.f317a1a98f3e8d1720dd.png",
+    "static/media/reseach3.png": "/resume/static/media/reseach3.f001ad77610948dbd10a.png",
+    "static/media/VirtualTryOn2.png": "/resume/static/media/VirtualTryOn2.cbf16fc334536799ad79.png",
+    "static/media/reseach1.png": "/resume/static/media/reseach1.0947ece4335f34d9d319.png",
     "static/media/india3.png": "/resume/static/media/india3.4cd946a4e7d54107a6c4.png",
     "static/media/vivart1.png": "/resume/static/media/vivart1.1118d7e47b64a84e0004.png",
     "static/media/india2.png": "/resume/static/media/india2.689ad251e0c2bec6b1ff.png",
+    "static/media/BBL1.jpg": "/resume/static/media/BBL1.ce120fd9a93e72bcb4ba.jpg",
     "static/media/vivart2.png": "/resume/static/media/vivart2.9c788fb6f00b8e1e0e05.png",
     "static/media/greenbox1.png": "/resume/static/media/greenbox1.f6464b2343d553975186.png",
     "static/media/cannabis1.png": "/resume/static/media/cannabis1.df6ad404b81aff5312cc.png",
@@ -23,15 +30,14 @@
     "static/media/india1.png": "/resume/static/media/india1.4d478b3fe5939606cb7a.png",
     "static/media/me2.png": "/resume/static/media/me2.a04b3615cfa912670096.png",
     "static/media/me4.png": "/resume/static/media/me4.1ebe7ea7822d78bc718d.png",
-    "static/media/code2.png": "/resume/static/media/code2.e6510c3ebc5e461fd7fe.png",
     "static/media/code1.png": "/resume/static/media/code1.0af6ddea0def283b80c2.png",
     "index.html": "/resume/index.html",
-    "main.726ff561.css.map": "/resume/static/css/main.726ff561.css.map",
-    "main.bf414bc9.js.map": "/resume/static/js/main.bf414bc9.js.map",
+    "main.556a9227.css.map": "/resume/static/css/main.556a9227.css.map",
+    "main.7507c991.js.map": "/resume/static/js/main.7507c991.js.map",
     "453.f9cd6926.chunk.js.map": "/resume/static/js/453.f9cd6926.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.726ff561.css",
-    "static/js/main.bf414bc9.js"
+    "static/css/main.556a9227.css",
+    "static/js/main.7507c991.js"
   ]
 }
