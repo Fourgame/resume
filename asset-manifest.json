@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.556a9227.css",
-    "main.js": "/resume/static/js/main.7507c991.js",
+    "main.css": "/resume/static/css/main.83575b45.css",
+    "main.js": "/resume/static/js/main.8db4194e.js",
     "static/js/453.f9cd6926.chunk.js": "/resume/static/js/453.f9cd6926.chunk.js",
     "static/media/reseach2.png": "/resume/static/media/reseach2.35254b2ab02521d7d00c.png",
     "static/media/generatemusic1.png": "/resume/static/media/generatemusic1.72437ce5e36401e34fc0.png",
@@ -9,6 +9,7 @@
     "static/media/VirtualTryOn1.png": "/resume/static/media/VirtualTryOn1.6596aad91d56a771849a.png",
     "static/media/mahidon2.png": "/resume/static/media/mahidon2.6227346609d1293c04a7.png",
     "static/media/NSO1.png": "/resume/static/media/NSO1.4367b0fb57407cdb4cb3.png",
+    "static/media/BBL2.png": "/resume/static/media/BBL2.8ce479a64759d881efc6.png",
     "static/media/projectBBL1.png": "/resume/static/media/projectBBL1.8ce479a64759d881efc6.png",
     "static/media/mahidon3.png": "/resume/static/media/mahidon3.475cdb0fb23c9af0c412.png",
     "static/media/mahidon1.png": "/resume/static/media/mahidon1.7afaf1276f9f628a4bdb.png",
@@ -23,8 +24,12 @@
     "static/media/BBL1.jpg": "/resume/static/media/BBL1.ce120fd9a93e72bcb4ba.jpg",
     "static/media/vivart2.png": "/resume/static/media/vivart2.9c788fb6f00b8e1e0e05.png",
     "static/media/greenbox1.png": "/resume/static/media/greenbox1.f6464b2343d553975186.png",
+    "static/media/BBL4.png": "/resume/static/media/BBL4.019f1f5a52cd04e47963.png",
+    "static/media/projectBBL3.png": "/resume/static/media/projectBBL3.019f1f5a52cd04e47963.png",
     "static/media/cannabis1.png": "/resume/static/media/cannabis1.df6ad404b81aff5312cc.png",
     "static/media/me3.png": "/resume/static/media/me3.9848168da6501dd72923.png",
+    "static/media/BBL3.png": "/resume/static/media/BBL3.fa4f1d88da000fcaa7c9.png",
+    "static/media/projectBBL2.png": "/resume/static/media/projectBBL2.fa4f1d88da000fcaa7c9.png",
     "static/media/cannabis2.png": "/resume/static/media/cannabis2.8e30fba05a586a2bc0aa.png",
     "static/media/greenbox3.png": "/resume/static/media/greenbox3.7151ec6af71c49d6ec74.png",
     "static/media/india1.png": "/resume/static/media/india1.4d478b3fe5939606cb7a.png",
@@ -32,12 +37,12 @@
     "static/media/me4.png": "/resume/static/media/me4.1ebe7ea7822d78bc718d.png",
     "static/media/code1.png": "/resume/static/media/code1.0af6ddea0def283b80c2.png",
     "index.html": "/resume/index.html",
-    "main.556a9227.css.map": "/resume/static/css/main.556a9227.css.map",
-    "main.7507c991.js.map": "/resume/static/js/main.7507c991.js.map",
+    "main.83575b45.css.map": "/resume/static/css/main.83575b45.css.map",
+    "main.8db4194e.js.map": "/resume/static/js/main.8db4194e.js.map",
     "453.f9cd6926.chunk.js.map": "/resume/static/js/453.f9cd6926.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.556a9227.css",
-    "static/js/main.7507c991.js"
+    "static/css/main.83575b45.css",
+    "static/js/main.8db4194e.js"
   ]
 }
