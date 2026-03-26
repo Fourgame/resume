@@ -1,10 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg-dark: #ffffff;
+  /* Pure white background for maximum brightness */
+  --bg-darker: #f1f5f9;
+  --text-main: #0f172a;
+  /* Very dark slate for maximum contrast */
+  --text-muted: #475569;
+  --accent-blue: #2563eb;
+  --accent-purple: #7c3aed;
+  --accent-teal: #0d9488;
+  --glass-bg: rgb(255, 255, 255);
+  /* Whiter, less transparent glass */
+  --glass-border: rgba(0, 0, 0, 0.08);
+  /* slightly stronger border */
+  --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  /* slightly stronger shadow */
+  --aurora-1: rgba(37, 99, 235, 0.05);
+  /* Very subtle blue */
+  --aurora-2: rgba(124, 58, 237, 0.05);
+  /* Very subtle purple */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 code {
@@ -14,101 +43,101 @@ code {
 
 html {
   scroll-behavior: smooth;
-}
-
-.project-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 1rem;
-}
-.project-card:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background: #f8f9fa;
-  overflow-x: hidden;   /* ✅ ป้องกันการเลื่อนขวา */
-}
-
-.container, .row {
-  margin: 0 auto !important;
-  max-width: 1024px;    /* ✅ ล็อคความกว้าง */
-}
-
-.card, .modal-content {
-  max-width: 100%;
+  background-color: var(--bg-dark);
   overflow-x: hidden;
 }
 
-/* ✅ ล็อคขนาด modal-dialog */
+/* ---------------------------------
+   Aurora Background Elements
+--------------------------------- */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+  animation: float 20s infinite ease-in-out alternate;
+}
+
+body::before {
+  top: -10vw;
+  left: -10vw;
+  background: var(--aurora-1);
+}
+
+body::after {
+  bottom: -10vw;
+  right: -10vw;
+  background: var(--aurora-2);
+  animation-delay: -10s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(5vw, 10vw) scale(1.1);
+  }
+
+  100% {
+    transform: translate(-10vw, 5vw) scale(0.9);
+  }
+}
+
+/* ---------------------------------
+   Global Layout Rules
+--------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+.container,
+.row {
+  margin: 0 auto !important;
+  max-width: 1140px;
+  /* Slightly wider for modern look */
+}
+
+.container {
+  width: 100% !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* ---------------------------------
+   Modal Overrides
+--------------------------------- */
 .modal-dialog {
   max-width: 900px !important;
   width: 900px !important;
   margin: 30px auto;
 }
 
-/* ✅ ป้องกัน modal-content ขยายเต็ม */
 .modal-content {
-  width: 900px !important;
-  max-width: 900px !important;
-  margin: auto;
-  border-radius: 12px;
-}
-.container {
-  width: 100% !important;       /* ✅ ให้ยืดเต็มจอ */
-  max-width: 1024px !important; /* ✅ ไม่ให้เกิน 1024px */
-  margin: 0 auto;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border) !important;
+  color: var(--text-main) !important;
+  border-radius: 20px !important;
+  box-shadow: var(--glass-shadow);
 }
 
-.modal {
-  overflow-x: hidden !important;   /* ✅ กัน modal เลื่อนแนวนอน */
+.modal-header {
+  border-bottom: 1px solid var(--glass-border) !important;
 }
 
-.modal-dialog {
-  margin: auto !important;         /* ✅ จัดกลาง */
-}
-.row {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}
-* {
-  box-sizing: border-box;
-}
-.btn-contact-pill {
-  background: #000;      
-  color: #fff;             
-  border: none;
-  border-radius: 50px;       
-  padding: 10px 25px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-.btn-contact-pill:hover {
-  background: #333;         
-  transform: translateY(-2px);
-}
-.contact-links a.contact-item {
-  color: #000;
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  transition: color 0.25s ease, transform 0.25s ease;
+.modal-header .btn-close {
+  filter: none;
+  /* Revert invert since background is now light */
 }
 
-.contact-links a.contact-item:hover {
-  color: #0d6efd; /* ✅ เปลี่ยนสีฟ้าเมื่อ hover */
-  transform: translateX(4px); /* ✅ ขยับเล็กน้อย */
-}
-
-.contact-links svg {
-  vertical-align: middle;
+.modal-body,
+.modal-footer {
+  border-top: none !important;
 }

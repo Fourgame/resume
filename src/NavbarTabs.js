@@ -12,9 +12,9 @@ const NavbarTabs = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setShowNavbar(false); 
+        setShowNavbar(false);
       } else {
-        setShowNavbar(true); 
+        setShowNavbar(true);
       }
 
       setLastScrollY(currentScrollY);
@@ -27,27 +27,30 @@ const NavbarTabs = () => {
 
   return (
     <div
-      className={`bg-white shadow-sm py-2 sticky-top nav-wrapper ${
-        showNavbar ? "show" : "hide"
-      }`}
-      style={{ zIndex: 1000, transition: "top 0.4s ease" }}
+      className={`nav-wrapper ${showNavbar ? "show" : "hide"
+        }`}
     >
-      <div className="container d-flex justify-content-center gap-4 nav-tabs-big">
-        <Link to="resume" spy smooth duration={500} className="nav-link fw-bold">
-          Resume
-        </Link>
-        <Link to="projects" spy smooth duration={500} className="nav-link fw-bold">
-          Projects
-        </Link>
-        <Link to="awards" spy smooth duration={500} className="nav-link fw-bold">
-          Awards
-        </Link>
-        <Link to="about" spy smooth duration={500} className="nav-link fw-bold">
-          About
-        </Link>
-        <Link to="contact" spy smooth duration={500} className="nav-link fw-bold">
-          contact
-        </Link>
+      <div className="d-flex justify-content-center w-100">
+        <div className="nav-pill nav-tabs-big">
+          <Link to="resume" spy smooth duration={500} className="nav-link fw-bold" activeClass="active">
+            Home
+          </Link>
+          <Link to="experience" spy smooth duration={500} className="nav-link fw-bold" activeClass="active">
+            Experience
+          </Link>
+          <Link to="projects" spy smooth duration={500} className="nav-link fw-bold" activeClass="active">
+            Projects
+          </Link>
+          <Link to="awards" spy smooth duration={500} className="nav-link fw-bold" activeClass="active">
+            Awards
+          </Link>
+          <Link to="about" spy smooth duration={500} className="nav-link fw-bold" activeClass="active">
+            About
+          </Link>
+          <Link to="contact" spy smooth duration={500} className="nav-link fw-bold" activeClass="active">
+            Contact
+          </Link>
+        </div>
       </div>
     </div>
   );

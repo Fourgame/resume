@@ -1,68 +1,130 @@
+/* App.css - Global Utilities for Modern Glass & Aurora Theme */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ---------------------------------
+   Glassmorphism Utilities
+--------------------------------- */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 1.5rem;
+  color: var(--text-main);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 20px rgba(59, 130, 246, 0.2);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* ---------------------------------
+   Typography Utilities
+--------------------------------- */
+.text-gradient {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-teal {
+  background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-muted-glass {
+  color: var(--text-muted) !important;
+}
+
+/* ---------------------------------
+   Button Utilities
+--------------------------------- */
+.btn-glass {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--text-main);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-glass:hover {
+  background: rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+  color: var(--text-main);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+  border: none;
+  color: white !important;
+  border-radius: 50px;
+  padding: 0.6rem 2rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.5);
+  color: white !important;
+}
+
+/* ---------------------------------
+   Overrides for React Bootstrap
+--------------------------------- */
+.bg-light, .bg-white {
+  background-color: transparent !important; /* Remove bright backgrounds */
+}
+
+.text-dark {
+  color: var(--text-main) !important;
+}
+
+.border {
+  border-color: var(--glass-border) !important;
+}
+
+.shadow-sm, .shadow-lg {
+  box-shadow: none !important; /* rely on glass-shadow instead */
+}
+
+/* ---------------------------------
+   Contact Links 
+--------------------------------- */
+.contact-links a.contact-item {
+  color: var(--text-main);
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-links a.contact-item:hover {
+  background: rgba(0,0,0,0.05);
+  color: var(--accent-blue);
+  transform: translateX(8px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* ✅ ล็อคทั้ง Layout ไม่ให้ responsive */
-html,
-body {
-  margin: 0 auto;
-  background: #f8f9fa;
-  overflow-x: hidden;
-}
-
-
-/* ✅ ล็อค card ไม่ให้เต็มจอ */
-.card {
-  margin: 0 auto;
-}
-
-/* ✅ ล็อคขนาด modal-dialog */
-.modal-dialog {
-  max-width: 900px !important;
-  width: 900px !important;
-  margin: 30px auto;
-}
-
-/* ✅ ป้องกัน modal-content ขยายเต็ม */
-.modal-content {
-  width: 900px !important;
-  max-width: 900px !important;
-  margin: auto;
-  border-radius: 12px;
+.contact-links svg {
+  vertical-align: middle;
 }

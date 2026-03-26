@@ -18,7 +18,12 @@ import cannabis1 from "./picture/Cannabis/cannabis1.png";
 import cannabis2 from "./picture/Cannabis/cannabis2.png";
 
 import projectBBL1 from "./picture/projectBBL/projectBBL1.png";
+import projectBBL2 from "./picture/projectBBL/projectBBL2.png";
+import projectBBL3 from "./picture/projectBBL/projectBBL3.png";
 import BBL1 from "./picture/BBL/BBL1.jpg";
+import BBL2 from "./picture/BBL/BBL2.png";
+import BBL3 from "./picture/BBL/BBL3.png";
+import BBL4 from "./picture/BBL/BBL4.png";
 
 import VirtualTryOn1 from "./picture/VirtualTryOn/VirtualTryOn1.png";
 import VirtualTryOn2 from "./picture/VirtualTryOn/VirtualTryOn2.png";
@@ -33,20 +38,26 @@ import generatemusic1 from "./picture/generatemusic/generatemusic1.png";
 const projects = [
   {
     title: "Cooperative Internship Experience – Bangkok Bank",
-    date: "Sep 2025 - Mar 2026",
+    date: "Nov 2025 - Mar 2026",
     desc: "Software Developer Intern at Bangkok Bank.",
     fullDesc: `Gained immersive corporate experience working as a Programmer Intern at Bangkok Bank's technology division. 
       
       • Collaborated with senior developers to understand enterprise-grade software life cycles.
       • Participated in daily stand-ups and agile development processes.
       • Improved problem-solving skills and learned to write maintainable code in a large-scale codebase.
-      • Honed professional communication and teamwork skills in a fast-paced environment.`,
-    imgs: [BBL1],
+      • Honed professional communication and teamwork skills in a fast-paced environment.
+      
+      Project: Intern Attendance Tracking Management System
+      • Developed following the full SDLC process, from requirement gathering to deployment.
+      • Built a React and C# .NET MVC full-stack system using Layered Architecture.
+      • Designed SQL Server database to manage complex attendance data and permissions.`,
+    imgs: [BBL1, BBL3, BBL4, BBL2],
+    relatedProject: "Intern Attendance Tracking",
     tag: "Internship,Soft Skills,Corporate"
   },
   {
     title: "Intern Attendance Tracking Management System",
-    date: "Sep 2025 - Mar 2026",
+    date: "Nov 2025 - Mar 2026",
     desc: "React and C# .NET MVC full-stack attendance system.",
     fullDesc: `Developed a comprehensive Attendance Tracking Management System during a cooperative internship at Bangkok Bank. Key responsibilities included:
     
@@ -54,7 +65,17 @@ const projects = [
     • Built the frontend using React and backend using C# .NET MVC in a Layered Architecture.
     • Designed SQL Server database schemas to support complex attendance rules and user permissions.
     • Ensured high scalability and maintainability of the codebase.`,
-    imgs: [projectBBL1],
+    imgs: [projectBBL1, projectBBL2, projectBBL3],
+    extraLinks: [
+      {
+        label: "Github Frontend",
+        url: "https://github.com/Fourgame/iatms.git"
+      },
+      {
+        label: "Github Backend",
+        url: "https://github.com/Napatpongc/IATMS.git"
+      }
+    ],
     tag: "React,C# .NET,SQL Server,Internship"
   },
   {
@@ -67,6 +88,7 @@ const projects = [
     • MongoDB integration for managing user sessions and product data.
     • Integrated advanced AI Virtual Try-On models to generate realistic garment previews on user-uploaded photos.`,
     imgs: [VirtualTryOn1, VirtualTryOn2, VirtualTryOn3],
+    link: "https://github.com/Fourgame/project_Mobile.git",
     tag: "React,Python,MongoDB,AI"
   },
   {
@@ -78,6 +100,7 @@ const projects = [
     • Crafted responsive UI using raw HTML, CSS3, and JavaScript.
     • Developed custom desktop Python GUI tools for staff to manage site content seamlessly.
     • Enabled completely non-technical staff to independently update news and media without diving into the source code.`,
+    link: "https://github.com/Fourgame/Website_HEBS_MU_for_Demo.git",
     extraLinks: [
       {
         label: "website",
@@ -92,14 +115,19 @@ const projects = [
     title: "Summer Internship abroad – Vishwakarma University, India",
     date: "Apr–Jun 2025",
     desc: "Cross-cultural summer internship in software development.",
-    fullDesc:
-      "Participated in frontend/backend development, attended academic workshops, and collaborated on research topics including AI and IoT solutions.",
+    fullDesc: `Collaborated cross-culturally and led a major security research initiative.
+
+    Research: Measurement of security headers and misconfiguration
+    • Analyzed 1M+ HTTP headers with Python (httpx, asyncio) using OWASP standards.
+    • Developed a Chrome extension in JavaScript for real-time analysis and AI recommendations (Flask, Gemini API).
+    • Research paper under review at Security and Privacy Journal – Wiley.`,
     imgs: [india1, india2, india3],
     extraLinks: [
       {
         label: "certificate",
         url: "https://drive.google.com/file/d/1OptBrqc3fXj129Rm5bRIIn9u7WpBC070/view?usp=sharing"
       }],
+    relatedProject: "Real World Websites",
     tag: "Internship",
   },
   {

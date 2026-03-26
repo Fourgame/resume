@@ -1,17 +1,23 @@
 import React from "react";
+import "./App.css";
 import NavbarTabs from "./NavbarTabs";
 import ResumeTab from "./tabs/ResumeTab";
+import ExperienceTab from "./tabs/ExperienceTab";
 import ProjectsTab from "./tabs/ProjectsTab";
 import AboutTab from "./tabs/AboutTab";
 
 function App() {
 
   return (
-    <main className="min-vh-100 bg-light text-dark pb-5">
+    <main className="min-vh-100 pb-5">
       <NavbarTabs />
 
       <section id="resume">
         <ResumeTab />
+      </section>
+
+      <section id="experience">
+        <ExperienceTab />
       </section>
 
       <section id="projects">

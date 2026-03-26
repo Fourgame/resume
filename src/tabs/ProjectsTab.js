@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 import ProjectModal from "./DataTab/ProjectModal";
 import projects from "./DataTab/Projectdata";
-import { FaTrophy } from "react-icons/fa";
+import { FaTrophy, FaCode } from "react-icons/fa";
 import battle1 from "./DataTab/picture/codebattle/code1.png";
 import NSO1 from "./DataTab/picture/NSO/NSO1.png";
 
@@ -39,15 +39,14 @@ const ProjectsTab = () => {
 
   return (
     <section id="projects" className="py-5">
-      <div className="container">
-        <motion.h2
-          className="mb-4 fw-bold text-gradient"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          Projects
-        </motion.h2>
+      <div className="container py-5 mt-5">
+        <Reveal direction="up">
+          <div className="text-center mb-5 mt-4">
+            <FaCode className="display-4 text-gradient-teal mb-3" />
+            <h2 className="fw-bold">Projects</h2>
+            <p className="text-muted-glass">Where ideas come to life</p>
+          </div>
+        </Reveal>
 
         <div className="row">
           {projects
@@ -61,84 +60,84 @@ const ProjectsTab = () => {
                 transition={{ delay: i * 0.15, duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <Card
-                  className="h-100 shadow-sm border-0 project-card"
+                <div
+                  className="glass-card h-100 d-flex flex-column"
                   onClick={() => handleShow(p)}
                   style={{ cursor: "pointer" }}
                 >
-                  <Card.Img
-                    variant="top"
+                  <img
                     src={p.imgs?.[0]}
                     alt={p.title}
+                    className="w-100"
                     style={{ height: "200px", objectFit: "cover" }}
                   />
-                  <Card.Body className="d-flex flex-column">
-                    <Card.Title>{p.title}</Card.Title>
-                    <Card.Subtitle className="text-muted mb-2">
+                  <div className="p-4 d-flex flex-column flex-grow-1">
+                    <h5 className="fw-bold mb-1">{p.title}</h5>
+                    <p className="text-gradient-teal small mb-3">
                       {p.date}
-                    </Card.Subtitle>
-                    <Card.Text className="flex-grow-1">{p.desc}</Card.Text>
+                    </p>
+                    <p className="text-muted-glass flex-grow-1">{p.desc}</p>
                     <div className="d-flex justify-content-between align-items-center mt-3">
-                      <Badge bg="secondary">{p.tag}</Badge>
-                      <Button variant="outline-primary" size="sm">
+                      <span className="badge rounded-pill" style={{ background: 'rgba(59, 130, 246, 0.2)', color: '#60a5fa' }}>{p.tag}</span>
+                      <Button variant="glass" size="sm">
                         View
                       </Button>
                     </div>
-                  </Card.Body>
-                </Card>
+                  </div>
+                </div>
               </motion.div>
             ))}
         </div>
       </div>
 
       {/* -------------------- Awards -------------------- */}
-      <section id="awards" className="py-5 mt-5 bg-white rounded-4 shadow-sm border border-light">
-        <div className="container py-4 px-4">
+      <section id="awards" className="py-5 mt-5">
+        <div className="container py-4 px-4 glass-card">
           <Reveal direction="up">
-            <div className="text-center mb-5">
-              <FaTrophy className="display-4 text-warning mb-3" />
+            <div className="text-center mb-5 mt-4">
+              <FaTrophy className="display-4 text-warning mb-3" style={{ filter: 'drop-shadow(0 0 10px rgba(255,193,7,0.5))' }} />
               <h2 className="fw-bold">Awards</h2>
-              <p className="text-muted">Extracurricular achievements and responsibilities</p>
+              <p className="text-muted-glass">Extracurricular achievements and responsibilities</p>
             </div>
           </Reveal>
 
-          <div className="row justify-content-center">
+          <div className="row justify-content-center mb-4">
             <div className="col-lg-10">
               <div className="row g-4">
 
                 <div className="col-md-6">
                   <Reveal direction="up" delay={0}>
-                    <Card className="h-100 border-0 bg-light rounded-4 overflow-hidden shadow-sm">
-                      <Card.Img
-                        variant="top"
+                    <div className="h-100 border-0 rounded-4 overflow-hidden" style={{ background: 'rgba(0,0,0,0.03)' }}>
+                      <img
                         src={battle1}
                         alt="Code Battle"
+                        className="w-100"
                         style={{ height: "250px", objectFit: "cover" }}
                       />
-                      <Card.Body className="p-4">
-                        <h5 className="fw-bold text-dark mb-1">Code Battle Contest 2025</h5>
-                        <p className="text-primary fw-semibold mb-3">1st Runner-up & First Solve (Mar 2025)</p>
-                        <p className="text-muted mb-0">Placed 2nd in competitive programming; solved the hardest problem first under time constraints using C++.</p>
-                      </Card.Body>
-                    </Card>
+                      <div className="p-4">
+                        <h5 className="fw-bold mb-1">Code Battle Contest 2025</h5>
+                        <p className="text-gradient-teal fw-semibold mb-3">1st Runner-up & First Solve (Mar 2025)</p>
+                        <p className="text-muted-glass mb-0">Placed 2nd in competitive programming; solved the hardest problem first under time constraints using C++.</p>
+                      </div>
+                    </div>
                   </Reveal>
                 </div>
 
                 <div className="col-md-6">
                   <Reveal direction="up" delay={0.1}>
-                    <Card className="h-100 border-0 bg-light rounded-4 overflow-hidden shadow-sm">
-                      <Card.Img
-                        variant="top"
+                    <div className="h-100 border-0 rounded-4 overflow-hidden" style={{ background: 'rgba(0,0,0,0.03)' }}>
+                      <img
                         src={NSO1}
                         alt="NSO Data Camp"
+                        className="w-100"
                         style={{ height: "250px", objectFit: "cover" }}
                       />
-                      <Card.Body className="p-4">
-                        <h5 className="fw-bold text-dark mb-1">NSO Data Camp</h5>
-                        <p className="text-primary fw-semibold mb-3">Best Concept & Function Award (Mar 2025)</p>
-                        <p className="text-muted mb-0">Proposed a data-driven stingless beekeeping solution for sustainable tourism in Eastern Thailand.</p>
-                      </Card.Body>
-                    </Card>
+                      <div className="p-4">
+                        <h5 className="fw-bold mb-1">NSO Data Camp</h5>
+                        <p className="text-gradient-teal fw-semibold mb-3">Best Concept & Function Award (Mar 2025)</p>
+                        <p className="text-muted-glass mb-0">Proposed a data-driven stingless beekeeping solution for sustainable tourism in Eastern Thailand.</p>
+                      </div>
+                    </div>
                   </Reveal>
                 </div>
 
@@ -148,7 +147,11 @@ const ProjectsTab = () => {
         </div>
       </section>
 
-      <ProjectModal project={selectedProject} onClose={handleClose} />
+      <ProjectModal 
+        project={selectedProject} 
+        onClose={handleClose} 
+        onNavigate={(title) => setTimeout(() => handleShow(projects.find(p => p.title.includes(title))), 300)}
+      />
     </section>
   );
 };

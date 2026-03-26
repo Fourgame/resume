@@ -14,12 +14,12 @@ import me3 from "../assets/me4.png";
 const AboutMe = () => {
     return (
         <section id="about" className="py-5">
-            <div className="container">
-                <h2 className="mb-5 fw-bold">About Me</h2>
+            <div className="container py-5 mt-5">
+                <h2 className="mb-5 fw-bold text-gradient">About Me</h2>
 
                 {/* 🔹 Card About Me with Image Carousel */}
-                <Card className="shadow-sm p-4 border-0">
-                    <Card.Body>
+                <div className="glass-card p-4">
+                    <div>
                         <div className="row align-items-center">
                             {/*  Carousel รูปทางซ้าย */}
                             <div className="col-md-5 mb-3 mb-md-0">
@@ -41,19 +41,19 @@ const AboutMe = () => {
 
                             {/*  ข้อความทางขวา */}
                             <div className="col-md-7">
-                                <Card.Text style={{}}>
+                                <div>
                                     {/* 🔹 Education Card */}
-                                    <Card className="mt-1 ">
-                                        <Card.Body>
-                                            <Card.Title className="fw-bold">Education</Card.Title>
-                                            <ul className="list-unstyled mt-1 border-top pt-1 mb-2">
-                                                <li><strong>B.Eng. Computer Engineering GPA: 3.04</strong></li>
+                                    <div className="p-4 rounded-4 mt-1 border-0" style={{ background: 'rgba(0,0,0,0.03)' }}>
+                                        <div>
+                                            <h4 className="fw-bold mb-3 text-dark">Education</h4>
+                                            <ul className="list-unstyled mt-1 pt-1 mb-2 text-muted-glass">
+                                                <li><strong className="text-dark">B.Eng. Computer Engineering GPA: 3.04</strong></li>
                                                 <li>Faculty of Engineering, Kasetsart University Sriracha Campus</li>
-                                                <li><em>(Expected Graduation: 2026)</em></li>
+                                                <li className="text-gradient-teal mt-1"><em>(Expected Graduation: 2026)</em></li>
                                             </ul>
-                                        </Card.Body>
-                                    </Card>
-                                    <div className="mt-3">Hello! My name is <strong>Nattapol Prairuenrom</strong>, a Computer Engineering student at
+                                        </div>
+                                    </div>
+                                    <div className="mt-4 text-muted-glass lh-lg text-dark">Hello! My name is <strong className="text-dark">Nattapol Prairuenrom</strong>, a Computer Engineering student at
                                         Kasetsart University, Sriracha Campus. I have a passion for programming,
                                         problem-solving, and building impactful software solutions.
                                         <br /><br />
@@ -66,17 +66,18 @@ const AboutMe = () => {
 
 
 
-                                </Card.Text>
+                                </div>
                             </div>
                         </div>
-                    </Card.Body>
-                </Card>
-                <h2 className="mb-5 mt-5 fw-bold">Contact</h2>
-                {/* 🔹 Contact Card */}
-                <Card className="mt-4 mb-4" id="contact">
-                    <Card.Body>
+                    </div>
+                </div>
 
-                        <div className="row align-items-center mt-4 mb-4">
+                <h2 className="mb-5 mt-5 pt-5 fw-bold text-gradient">Contact</h2>
+                {/* 🔹 Contact Card */}
+                <div className="glass-card p-4 mt-4 mb-4" id="contact">
+                    <div>
+
+                        <div className="row align-items-center mt-2 mb-2">
                             {/* แผนที่ทางซ้าย */}
                             <div className="col-md-6 mb-3 mb-md-0">
                                 <div style={{ borderRadius: "10px", overflow: "hidden" }}>
@@ -93,64 +94,62 @@ const AboutMe = () => {
                                 </div>
                             </div>
                             {/* ข้อมูล Contact ทางขวา */}
-                            <div className="col-md-6">
-
+                            <div className="col-md-6 mt-4 mt-md-0 ps-md-4">
                                 <ul className="list-unstyled contact-links">
-
                                     <li className="mb-3">
                                         <a href="https://www.google.com/maps/place/บางขุนเทียน+แขวงบางขุนเทียน+เขตจอมทอง+กรุงเทพมหานคร+10150/@13.7024702,100.4179853,14z/data=!4m6!3m5!1s0x30e2980630485459:0x35c879591bc95555!8m2!3d13.6982802!4d100.4452756!16s%2Fg%2F11kb_pg2jh?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="contact-item">
-                                            <MapPin size={28} className="me-2" /> Location: Chomthong, Bangkok 10150 <ExternalLink size={16} className="ms-2" />
+                                            <MapPin size={28} color="#ef4444" className="me-3" />
+                                            <span>Location: Chomthong, Bangkok 10150</span>
+                                            <ExternalLink size={16} className="ms-2 opacity-50" />
                                         </a>
                                     </li>
-
                                     <li className="mb-3">
-                                        <a
-                                            href="https://www.linkedin.com/in/nattapol-prairuenrom-aa926b330"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="contact-item"
-                                        >
-                                            <FaLinkedin size={26} color="black" className="me-2" />
-                                            LinkedIn: Nattapol Prairuenrom
-                                            <ExternalLink size={16} className="ms-2" />
+                                        <a href="https://www.linkedin.com/in/nattapol-prairuenrom-aa926b330" target="_blank" rel="noopener noreferrer" className="contact-item">
+                                            <FaLinkedin size={26} color="#3b82f6" className="me-3" />
+                                            <span>LinkedIn: Nattapol Prairuenrom</span>
+                                            <ExternalLink size={16} className="ms-2 opacity-50" />
                                         </a>
                                     </li>
-
                                     <li className="mb-3">
                                         <a href="https://www.facebook.com/Nattapol1eiei" target="_blank" rel="noopener noreferrer" className="contact-item">
-                                            <FaFacebook size={26} color="black" className="me-2" /> Facebook: ณัฏฐพล ไพรรื่นรมย์ <ExternalLink size={16} className="ms-2" />
+                                            <FaFacebook size={26} color="#1877F2" className="me-3" />
+                                            <span>Facebook: ณัฏฐพล ไพรรื่นรมย์</span>
+                                            <ExternalLink size={16} className="ms-2 opacity-50" />
                                         </a>
                                     </li>
-
                                     <li className="mb-3">
                                         <a href="https://line.me/ti/p/~four5454" target="_blank" rel="noopener noreferrer" className="contact-item">
-                                            <FaLine size={26} color="black" className="me-2" /> Line ID: four5454 <ExternalLink size={16} className="ms-2" />
+                                            <FaLine size={26} color="#06C755" className="me-3" />
+                                            <span>Line ID: four5454</span>
+                                            <ExternalLink size={16} className="ms-2 opacity-50" />
                                         </a>
                                     </li>
-
                                     <li className="mb-3">
                                         <a href="https://github.com/Fourgame" target="_blank" rel="noopener noreferrer" className="contact-item">
-                                            <Github size={28} className="me-2" /> GitHub: Fourgame <ExternalLink size={16} className="ms-2" />
+                                            <Github size={28} color="#000000ff" className="me-3" />
+                                            <span>GitHub: Fourgame</span>
+                                            <ExternalLink size={16} className="ms-2 opacity-50" />
                                         </a>
                                     </li>
-
                                     <li className="mb-3">
                                         <a href="mailto:loukfour@gmail.com" className="contact-item">
-                                            <Mail size={28} className="me-2" /> Gmail: loukfour@gmail.com <ExternalLink size={16} className="ms-2" />
+                                            <Mail size={28} color="#f59e0b" className="me-3" />
+                                            <span>Gmail: loukfour@gmail.com</span>
+                                            <ExternalLink size={16} className="ms-2 opacity-50" />
                                         </a>
                                     </li>
-
                                     <li className="mb-3">
                                         <a href="tel:+66952505929" className="contact-item">
-                                            <Phone size={28} className="me-2" /> Tell: 095-250-5929 <ExternalLink size={16} className="ms-2" />
+                                            <Phone size={28} color="#10b981" className="me-3" />
+                                            <span>Tell: 095-250-5929</span>
+                                            <ExternalLink size={16} className="ms-2 opacity-50" />
                                         </a>
                                     </li>
                                 </ul>
-
                             </div>
                         </div>
-                    </Card.Body>
-                </Card>
+                    </div>
+                </div>
             </div>
         </section>
     );

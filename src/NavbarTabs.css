@@ -1,37 +1,70 @@
+/* NavbarTabs.css - Modern Glass Pill Navbar */
+
 .nav-wrapper.hide {
   top: -100px;
 }
 
 .nav-wrapper.show {
-  top: 0;
+  top: 20px;
 }
 
 .nav-wrapper {
-  background: rgba(255, 255, 255, 0.8) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background: transparent !important;
+  border-bottom: none;
+  position: fixed;
+  width: 100%;
+  pointer-events: none; /* Let clicks pass through the wrapper */
+  z-index: 1000;
+  transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-pill {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.3s ease;
+    pointer-events: auto; /* Re-enable clicks on the pill itself */
+    display: inline-flex;
 }
 
 .nav-tabs-big {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 0;
 }
 
 .nav-tabs-big .nav-link {
-  padding: 0.6rem 1.4rem;
-  font-size: 1.1rem;
-  border-radius: 50rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 50px;
   transition: all 0.3s ease;
   cursor: pointer;
-  color: #555;
-  font-weight: 600;
+  color: var(--text-muted);
+  font-weight: 500;
   text-transform: capitalize;
+  margin: 0 0.2rem;
 }
 
 .nav-tabs-big .nav-link.active,
 .nav-tabs-big .nav-link:hover {
-  background-color: #0d6efd;
-  color: white !important;
-  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-tabs-big .nav-link.active {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.nav-pill .nav-link:hover:not(.active) {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-main);
+}
+
+.nav-pill .nav-link.active {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
