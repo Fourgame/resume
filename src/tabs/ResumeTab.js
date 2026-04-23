@@ -64,9 +64,9 @@ const ResumeApp = () => {
               <Reveal direction="left" delay={0.2}>
                 <p className="fw-bold tracking-wide text-uppercase mb-2 text-gradient-teal">Hello, I'm</p>
                 <h1 className="display-3 fw-bolder mb-3 text-gradient">Mr. Nattapol Prairuenrom</h1>
-                <h3 className="h4 text-muted-glass mb-4">Aspiring Software Developer</h3>
+                <h3 className="h4 text-muted-glass mb-4"></h3>
                 <p className="lead text-muted-glass mb-4" style={{ maxWidth: '600px', margin: '0 auto', marginInlineStart: 'lg-0' }}>
-                  A Fourth-year Computer Engineering student at Kasetsart University. Passionate about turning complex problems into elegant, logical solutions. Eager to bring my skills to a professional engineering team.
+
                 </p>
                 <button
                   className="btn btn-gradient mt-2"
@@ -90,7 +90,7 @@ const ResumeApp = () => {
                 <h2 className="fw-bold mb-4">Career Objective</h2>
                 <div className="glass-card p-4">
                   <p className="fs-5 text-muted-glass lh-lg mb-0 text-dark">
-                    Interested in a <strong className="text-dark">Software Development</strong> position to apply my skills in <strong className="text-dark">Python</strong>, <strong className="text-dark">C#</strong>, <strong className="text-dark">C++</strong>, <strong className="text-dark">Java</strong>, and <strong className="text-dark">JavaScript</strong>, develop and enhance software, and have a passion for Machine Learning and AI, and collaborate with a professional engineering team to gain valuable professional experience
+                    Interested in a <strong className="text-dark">Software Engineer / AI Engineer</strong> position to apply my skills in <strong className="text-dark">Python</strong>, <strong className="text-dark">C#</strong>, <strong className="text-dark">C++</strong>, <strong className="text-dark">Java</strong>, and <strong className="text-dark">JavaScript</strong>, develop and enhance software, and have a passion for Machine Learning and AI, and collaborate with a professional engineering team to gain valuable professional experience
                   </p>
                 </div>
               </Reveal>

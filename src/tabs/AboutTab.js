@@ -132,12 +132,20 @@ const AboutMe = () => {
                                         </a>
                                     </li>
                                     <li className="mb-3">
-                                        <a href="mailto:loukfour@gmail.com" className="contact-item">
+                                        <a href="mailto:nattapol.prairuenrom@gmail.com" className="contact-item">
                                             <Mail size={28} color="#f59e0b" className="me-3" />
-                                            <span>Gmail: loukfour@gmail.com</span>
+                                            <span>Gmail : nattapol.prairuenrom@gmail.com</span>
                                             <ExternalLink size={16} className="ms-2 opacity-50" />
                                         </a>
                                     </li>
+                                    <li className="mb-3">
+                                        <a href="mailto:loukfour@gmail.com" className="contact-item">
+                                            <Mail size={28} color="#f59e0b" className="me-3" />
+                                            <span>Gmail secondary: loukfour@gmail.com</span>
+                                            <ExternalLink size={16} className="ms-2 opacity-50" />
+                                        </a>
+                                    </li>
+
                                     <li className="mb-3">
                                         <a href="tel:+66952505929" className="contact-item">
                                             <Phone size={28} color="#10b981" className="me-3" />

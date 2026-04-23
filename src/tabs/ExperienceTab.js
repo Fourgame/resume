@@ -85,18 +85,20 @@ const ExperienceTab = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <TimelineItem
-              title="Cooperative Internship – Bangkok Bank"
+              title="Programmer Cooperative – Bangkok Bank"
               subtitle="Programmer Intern"
               date="Nov 2025 - Mar 2026"
               onClick={() => handleShow(projects.find(p => p.title.includes("Cooperative Internship Experience")))}
             >
-              <p>Gained hands-on experience in corporate software development, system design, and teamwork.</p>
+              <ul className="mb-2 ps-3 text-muted-glass">
+                <li>Cooperative Internship in Programmer with ERM team gained experience in software development, system design, and teamwork.</li>
+              </ul>
               <div className="p-3 rounded mb-3" style={{ background: 'rgba(0,0,0,0.03)' }}>
-                <strong className="text-dark">Project: Intern Attendance Tracking Management System</strong>
+                <strong className="text-dark">Project : Intern Attendance Tracking Management System</strong>
                 <ul className="mt-2 mb-0 ps-3 text-muted-glass">
-                  <li>Developed following the full SDLC process, from requirement gathering to deployment.</li>
-                  <li>Built a React and C# .NET MVC full-stack system using Layered Architecture.</li>
-                  <li>Designed SQL Server database to manage complex attendance data and permissions.</li>
+                  <li>Developed following the full SDLC process, from requirement gathering, system analysis, design, and successful deployment.</li>
+                  <li>Built a React and C# .NET MVC full-stack system using Layered Architecture for scalability and maintainability.</li>
+                  <li>Conducted requirement analysis, Database Design stored procedure using MSSQL Server to manage complex attendance data and user permissions effectively.</li>
                 </ul>
               </div>
               {projects.find(p => p.title.includes("Cooperative Internship Experience"))?.imgs?.[0] && (
